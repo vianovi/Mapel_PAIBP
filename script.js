@@ -33,4 +33,4 @@ document.getElementById('manual-link').href = destination;
 // Redirect otomatis setelah 2 detik
 setTimeout(() => {
     window.location.href = destination;
-}, 2000);
+}, 5000);
