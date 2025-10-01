@@ -1,0 +1,77 @@
+/* Gaya dari sebelumnya tetap sama */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transisi halus */
+}
+
+.container {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 400px;
+}
+
+/* === GAYA BARU UNTUK MODE KESALAHAN === */
+.error-icon {
+    color: #ffc107; /* Warna kuning peringatan */
+    margin-bottom: 20px;
+}
+
+.container.error-mode h1 {
+    color: #d9534f; /* Warna merah untuk judul kesalahan */
+}
+/* === AKHIR GAYA BARU === */
+
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.link:hover {
+    background-color: #1558b8;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #1a73e8;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
