@@ -55,7 +55,7 @@ if (target && links[target]) {
 
   // Ubah teks heading dan paragraf
     heading.textContent = "Tautan Tidak Ditemukan";
-    paragraph.innerHTML = "Maaf, link yang Anda tuju sepertinya keliru atau sudah tidak tersedia. <br>Mohon hubungi pemilik QR Code ini untuk informasi lebih lanjut.";
+    paragraph.innerHTML = "Maaf, link yang Anda tuju sepertinya keliru atau sudah tidak tersedia. <br>Mohon hubungi pengembang atau pemilik QR Code ini untuk informasi lebih lanjut.";
 
   // Sembunyikan loader dan tombol link manual
     loader.style.display = 'none';
