@@ -3,12 +3,13 @@
 // ==================================================================
 const links = {
   // LINK DEFAULT WAJIB ADA. Arahkan ini ke URL halaman error Anda.
-  "default": "error.html", // GANTI DENGAN URL HALAMAN ERROR ANDA NANTI
+    "default": "error.html",
 
   // Daftar URL tujuan dengan kata kunci
-  "paket1": "https://docs.google.com/forms/d/e/1FAIpQLSee8sYM0UhNvIzGp1NSG6pLJsmkw-dlcrTKewDHwCYIbvUVcw/viewform?usp=dialog",
-  "paket2": "https://URL-tujuan-anda-untuk-paket-2.com",
-  "paket3": "https://URL-tujuan-anda-untuk-paket-3.com",
+    "simulasi": "https://docs.google.com/forms/d/e/1FAIpQLSee8sYM0UhNvIzGp1NSG6pLJsmkw-dlcrTKewDHwCYIbvUVcw/viewform?usp=dialog",
+    "paket1": "https://URL-tujuan-anda-untuk-paket-1.com",
+    "paket2": "https://URL-tujuan-anda-untuk-paket-2.com",
+    "paket3": "https://URL-tujuan-anda-untuk-paket-3.com",
 };
 
 
@@ -16,8 +17,8 @@ const links = {
 
 // Fungsi untuk mengambil parameter dari URL
 function getParam(name) {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(name);
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
 }
 
 // Cari target dari parameter URL dengan nama "to"
@@ -31,5 +32,5 @@ document.getElementById('manual-link').href = destination;
 
 // Redirect otomatis setelah 2 detik
 setTimeout(() => {
-  window.location.href = destination;
+    window.location.href = destination;
 }, 2000);
