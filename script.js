@@ -1,11 +1,11 @@
 // ==================================================================
-// == BAGIAN TERPENTING: EDIT DAFTAR LINK DAN DEFAULT ANDA DI SINI ==
+// == BAGIAN TERPENTING: script DAFTAR LINK DAN DEFAULT==
 // ==================================================================
 const links = {
-  // LINK DEFAULT WAJIB ADA. Arahkan ini ke URL halaman error Anda.
-    "default": "https://vianovi.github.io/Default_pages/",
+// LINK DEFAULT WAJIB ADA. Arahkan ini ke URL halaman error.
+    "default": "https://vianovi.github.io/Default_pages/index.html",
 
-  // Daftar URL tujuan dengan kata kunci
+// Daftar URL tujuan dengan kata kunci
     "simulasi": "https://docs.google.com/forms/d/e/1FAIpQLSee8sYM0UhNvIzGp1NSG6pLJsmkw-dlcrTKewDHwCYIbvUVcw/viewform?usp=dialog",
     "paket1": "https://forms.gle/Ez6P96VvWFhU8FbZ6",
     "paket2": "https://forms.gle/9k7sxdaT8Xryk7BW6",
@@ -25,7 +25,7 @@ function getParam(name) {
 const target = getParam("to");
 
 // Tentukan URL tujuan (LOGIKA INTI)
-const destination = links[target] || links["paket1"];
+const destination = links[target] || links["default"];
 
 // Update link manual (tombol) agar sesuai dengan tujuan akhir
 document.getElementById('manual-link').href = destination;
