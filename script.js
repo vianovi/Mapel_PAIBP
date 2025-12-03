@@ -25,7 +25,7 @@ function getParam(name) {
 const target = getParam("to");
 
 // Tentukan URL tujuan (LOGIKA INTI)
-const destination = links[target] || links["paket1"];
+const destination = links[target] || links["dafult"];
 
 // Update link manual (tombol) agar sesuai dengan tujuan akhir
 document.getElementById('manual-link').href = destination;
